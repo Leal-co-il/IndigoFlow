@@ -1,0 +1,148 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    overflow: hidden;
+}
+
+.jumbotron-fluid,
+.jumbotron-fluid > .row {
+    height: 100vh;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+#jumbo-content {
+    height: 80%;
+    width: 80%;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    top: 15vw;
+    margin-top: 10%;
+}
+
+#logoImg {
+    background-image: url("../img/mini-jumbo-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    max-width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#jumbo-content h1 {
+    font-family: 'Indie Flower', cursive;
+}
+
+.jumbotron-fluid button {
+    font-family: 'Mansalva', cursive;
+    box-shadow: 2px 2px 15px 0px black;
+}
+
+.jumbotron-fluid > .row > .col-4 {
+    padding: 0;
+    background-color: #D77AC1;
+    box-shadow: inset 0 0 10px black;
+}
+
+.jumbotron-fluid .col-8 {
+    background-image: url("../img/jumbo-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+}
+
+/* Start of workspace */
+
+#workDisplay {
+    width: 95%;
+    height: 85%;
+    background-color: rgba(192, 192, 192, 0.7);
+    opacity: 0.0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    color: black;
+    box-shadow: 2px 2px 15px 0px black;    
+}
+
+#workDisplay > .row {
+    width: 100%;
+    margin: 0;
+    padding: 5px;
+    height: 50%;
+}
+
+#workDisplay .col {
+    /* height: 50%; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 2px 2px 15px 0px black;
+    margin: 10px 5px;
+}
+
+#workDisplay .col:hover .description {
+    opacity: 1;
+}
+
+.text {
+    /* background-color: #4CAF50; */
+    /* font-size: 16px; */
+    /* padding: 16px 32px; */
+    color: #D77AC1;
+    font-size: 1.5rem;
+    font-family: 'Indie Flower', cursive;
+}
+
+.description {
+    background-color: rgba(0,0,0,1);
+    padding: 10px;
+    max-width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 600px) {
+    #logoImg {
+        height: 7rem;
+        max-width: 15rem;
+    }
+    #jumbo-content h1 {
+        font-family: 'Indie Flower', cursive;
+        font-size: 1.5rem;
+    }
+    #jumbo-content p {
+        font-size: 1rem;
+    }
+    .jumbotron-fluid .col-8 {
+        background-position-x: center;
+    }
+
+    #workDisplay > .row {
+        height: 30%;
+    }
+
+    #workDisplay .col {
+        height: 100%;
+        background-position: center;
+
+    }
+
+    .text {
+        font-size: 1rem;
+    }
+}
